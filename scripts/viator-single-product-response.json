@@ -1,0 +1,812 @@
+{
+  "status": "ACTIVE",
+  "productCode": "37387P3",
+  "language": "en",
+  "createdAt": "2016-07-04T07:00:00Z",
+  "lastUpdatedAt": "2026-02-16T15:49:03Z",
+  "title": "Aruba Jolly Pirate Afternoon Sail with Snorkeling",
+  "ticketInfo": {
+    "ticketTypes": [
+      "MOBILE_ONLY"
+    ],
+    "ticketTypeDescription": "Mobile or paper ticket accepted",
+    "ticketsPerBooking": "ONE_PER_BOOKING",
+    "ticketsPerBookingDescription": "One per booking"
+  },
+  "pricingInfo": {
+    "type": "PER_PERSON",
+    "ageBands": [
+      {
+        "ageBand": "INFANT",
+        "startAge": 0,
+        "endAge": 4,
+        "minTravelersPerBooking": 0,
+        "maxTravelersPerBooking": 15
+      },
+      {
+        "ageBand": "CHILD",
+        "startAge": 5,
+        "endAge": 10,
+        "minTravelersPerBooking": 0,
+        "maxTravelersPerBooking": 15
+      },
+      {
+        "ageBand": "ADULT",
+        "startAge": 11,
+        "endAge": 99,
+        "minTravelersPerBooking": 1,
+        "maxTravelersPerBooking": 15
+      }
+    ]
+  },
+  "images": [
+    {
+      "imageSource": "SUPPLIER_PROVIDED",
+      "caption": "",
+      "isCover": true,
+      "variants": [
+        {
+          "height": 100,
+          "width": 100,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/06/71/30/eb.jpg"
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/06/71/30/eb.jpg"
+        },
+        {
+          "height": 400,
+          "width": 400,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/06/71/30/eb.jpg"
+        },
+        {
+          "height": 240,
+          "width": 360,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/06/71/30/eb.jpg"
+        },
+        {
+          "height": 320,
+          "width": 480,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/06/71/30/eb.jpg"
+        },
+        {
+          "height": 360,
+          "width": 540,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/06/71/30/eb.jpg"
+        },
+        {
+          "height": 446,
+          "width": 674,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/06/71/30/eb.jpg"
+        },
+        {
+          "height": 480,
+          "width": 720,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/71/30/eb.jpg"
+        },
+        {
+          "height": 118,
+          "width": 210,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/06/71/30/eb.jpg"
+        },
+        {
+          "height": 75,
+          "width": 75,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/06/71/30/eb.jpg"
+        }
+      ]
+    },
+    {
+      "imageSource": "SUPPLIER_PROVIDED",
+      "caption": "",
+      "isCover": false,
+      "variants": [
+        {
+          "height": 100,
+          "width": 100,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 400,
+          "width": 400,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 240,
+          "width": 360,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 320,
+          "width": 480,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 360,
+          "width": 540,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 446,
+          "width": 674,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 480,
+          "width": 720,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 118,
+          "width": 210,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0b/f1/1f/33.jpg"
+        },
+        {
+          "height": 75,
+          "width": 75,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0b/f1/1f/33.jpg"
+        }
+      ]
+    },
+    {
+      "imageSource": "SUPPLIER_PROVIDED",
+      "caption": "",
+      "isCover": false,
+      "variants": [
+        {
+          "height": 100,
+          "width": 100,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 400,
+          "width": 400,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 240,
+          "width": 360,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 320,
+          "width": 480,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 360,
+          "width": 540,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 446,
+          "width": 674,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 480,
+          "width": 720,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 118,
+          "width": 210,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0b/07/f0/f5.jpg"
+        },
+        {
+          "height": 75,
+          "width": 75,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0b/07/f0/f5.jpg"
+        }
+      ]
+    },
+    {
+      "imageSource": "SUPPLIER_PROVIDED",
+      "caption": "",
+      "isCover": false,
+      "variants": [
+        {
+          "height": 100,
+          "width": 100,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 400,
+          "width": 400,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 240,
+          "width": 360,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 320,
+          "width": 480,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 360,
+          "width": 540,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 446,
+          "width": 674,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 480,
+          "width": 720,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 118,
+          "width": 210,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0b/f1/1e/96.jpg"
+        },
+        {
+          "height": 75,
+          "width": 75,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0b/f1/1e/96.jpg"
+        }
+      ]
+    },
+    {
+      "imageSource": "SUPPLIER_PROVIDED",
+      "caption": "",
+      "isCover": false,
+      "variants": [
+        {
+          "height": 100,
+          "width": 100,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 400,
+          "width": 400,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 240,
+          "width": 360,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 320,
+          "width": 480,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 360,
+          "width": 540,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 446,
+          "width": 674,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 480,
+          "width": 720,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 118,
+          "width": 210,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0b/07/f0/bc.jpg"
+        },
+        {
+          "height": 75,
+          "width": 75,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0b/07/f0/bc.jpg"
+        }
+      ]
+    },
+    {
+      "imageSource": "SUPPLIER_PROVIDED",
+      "caption": "",
+      "isCover": false,
+      "variants": [
+        {
+          "height": 100,
+          "width": 100,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 400,
+          "width": 400,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 240,
+          "width": 360,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 320,
+          "width": 480,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 360,
+          "width": 540,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 446,
+          "width": 674,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 480,
+          "width": 720,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 118,
+          "width": 210,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0b/f1/1e/88.jpg"
+        },
+        {
+          "height": 75,
+          "width": 75,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0b/f1/1e/88.jpg"
+        }
+      ]
+    },
+    {
+      "imageSource": "SUPPLIER_PROVIDED",
+      "caption": "",
+      "isCover": false,
+      "variants": [
+        {
+          "height": 100,
+          "width": 100,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 400,
+          "width": 400,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 240,
+          "width": 360,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 320,
+          "width": 480,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 360,
+          "width": 540,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 446,
+          "width": 674,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 480,
+          "width": 720,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 118,
+          "width": 210,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0b/f1/1f/40.jpg"
+        },
+        {
+          "height": 75,
+          "width": 75,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0b/f1/1f/40.jpg"
+        }
+      ]
+    },
+    {
+      "imageSource": "SUPPLIER_PROVIDED",
+      "caption": "",
+      "isCover": false,
+      "variants": [
+        {
+          "height": 100,
+          "width": 100,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-100x100/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 200,
+          "width": 200,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-200x200/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 400,
+          "width": 400,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-400x400/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 240,
+          "width": 360,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-360x240/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 320,
+          "width": 480,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-480x320/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 360,
+          "width": 540,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-540x360/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 446,
+          "width": 674,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 480,
+          "width": 720,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 118,
+          "width": 210,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-210x118/0b/07/f0/a0.jpg"
+        },
+        {
+          "height": 75,
+          "width": 75,
+          "url": "https://hare-media-cdn.tripadvisor.com/media/attractions-splice-spp-75x75/0b/07/f0/a0.jpg"
+        }
+      ]
+    }
+  ],
+  "logistics": {
+    "start": [
+      {
+        "location": {
+          "ref": "LOC-o0AXGEKPN4wJ9sIG0RAn5PjB/d7vcvcBaDHFkkwNb+0Klwds1hJD9ljseh2ut6iI"
+        },
+        "description": "The Jolly Pirates Ships depart from the area at MooMba Beach. MooMba Beach is located in Palm Beach by the high rise hotels and just between the Holiday Inn and the Marriott Resorts. Guests meet up just beside the MooMba Bar at the Skull and Crossbones Pirate Shop."
+      }
+    ],
+    "end": [
+      {
+        "location": {
+          "ref": "LOC-o0AXGEKPN4wJ9sIG0RAn5PjB/d7vcvcBaDHFkkwNb+0Klwds1hJD9ljseh2ut6iI"
+        },
+        "description": "The Jolly Pirates Ships depart from the area at MooMba Beach. MooMba Beach is located in Palm Beach by the high rise hotels and just between the Holiday Inn and the Marriott Resorts. Guests meet up just beside the MooMba Bar at the Skull and Crossbones Pirate Shop."
+      }
+    ],
+    "redemption": {
+      "redemptionType": "NONE",
+      "specialInstructions": "• Please note: Boarding time begin 45 minutes prior to departure time\n • Minimum drinking age is 18 years \n • For questions or concerns please contact Jolly Pirates at +297 586 8107 or  info@jolly-pirates.com\n • The duration of transfers are approximate, the exact duration will depend on the time of day and traffic conditions"
+    },
+    "travelerPickup": {
+      "pickupOptionType": "MEET_EVERYONE_AT_START_POINT",
+      "allowCustomTravelerPickup": false
+    }
+  },
+  "timeZone": "America/Aruba",
+  "description": "Enjoy an afternoon snorkeling cruise in Aruba aboard this 85-foot teak Schooner. Visit three great sites: Malmok Reefs, Boca Catalina and the WWII shipwreck, Antilla! You can choose to swim and snorkel at two of the sites and you will have time to channel your Johhny Depp for some cool rope swinging at the third site. For your comfort find ample shade and seating under the large canopy by the bar or stretch out on the teak deck for sunning. This tour includes an open bar, a full-set snorkeling gear and lots of fun with the ship's rope swing!",
+  "inclusions": [
+    {
+      "category": "OTHER",
+      "categoryDescription": "Other",
+      "type": "OTHER",
+      "typeDescription": "Other",
+      "otherDescription": "Rope swing"
+    },
+    {
+      "category": "OTHER",
+      "categoryDescription": "Other",
+      "type": "OTHER",
+      "typeDescription": "Other",
+      "otherDescription": "Unlimited drinks (open bar)"
+    },
+    {
+      "category": "OTHER",
+      "categoryDescription": "Other",
+      "type": "OTHER",
+      "typeDescription": "Other",
+      "otherDescription": "Professional guide"
+    },
+    {
+      "category": "EQUIPMENT",
+      "categoryDescription": "Use of equipment",
+      "type": "USE_OF_SNORKELING_EQUIPMENT",
+      "typeDescription": "Use of snorkeling equipment",
+      "description": "Use of Snorkelling equipment"
+    },
+    {
+      "category": "OTHER",
+      "categoryDescription": "Other",
+      "type": "OTHER",
+      "typeDescription": "Other",
+      "otherDescription": "Access to two restrooms on-board"
+    }
+  ],
+  "exclusions": [
+    {
+      "category": "OTHER",
+      "categoryDescription": "Other",
+      "type": "OTHER",
+      "typeDescription": "Other",
+      "otherDescription": "Hotel pickup and drop-off"
+    },
+    {
+      "category": "FEES_AND_TAXES",
+      "categoryDescription": "Fees",
+      "type": "GRATUITIES",
+      "typeDescription": "Gratuities",
+      "description": "Gratuities"
+    },
+    {
+      "category": "OTHER",
+      "categoryDescription": "Other",
+      "type": "OTHER",
+      "typeDescription": "Other",
+      "otherDescription": "Souvenirs (available to purchase)"
+    },
+    {
+      "category": "OTHER",
+      "categoryDescription": "Other",
+      "type": "OTHER",
+      "typeDescription": "Other",
+      "otherDescription": "Food"
+    }
+  ],
+  "additionalInfo": [
+    {
+      "type": "STROLLER_ACCESSIBLE",
+      "description": "Infants and small children can ride in a pram or stroller"
+    },
+    {
+      "type": "PUBLIC_TRANSPORTATION_NEARBY",
+      "description": "Public transportation options are available nearby"
+    },
+    {
+      "type": "NO_BACK_PROBLEMS",
+      "description": "Not recommended for travelers with spinal injuries"
+    },
+    {
+      "type": "NO_HEART_PROBLEMS",
+      "description": "Not recommended for travelers with poor cardiovascular health"
+    },
+    {
+      "type": "PHYSICAL_MEDIUM",
+      "description": "Travelers should have at least a moderate level of physical fitness"
+    },
+    {
+      "type": "OTHER",
+      "description": "Children must be accompanied by an adult"
+    },
+    {
+      "type": "OTHER",
+      "description": "Minimum drinking age is 18 years"
+    },
+    {
+      "type": "OTHER",
+      "description": "Operated by a multi-lingual guide"
+    }
+  ],
+  "cancellationPolicy": {
+    "type": "ALL_SALES_FINAL",
+    "description": "All sales are final. No refund is available for cancellations.",
+    "cancelIfBadWeather": true,
+    "cancelIfInsufficientTravelers": false,
+    "refundEligibility": [
+      {
+        "dayRangeMin": 0,
+        "percentageRefundable": 0
+      }
+    ]
+  },
+  "bookingConfirmationSettings": {
+    "bookingCutoffType": "FIXED_TIME",
+    "bookingCutoffInMinutes": 1440,
+    "confirmationType": "INSTANT",
+    "bookingCutoffFixedTime": "00:01:00"
+  },
+  "bookingRequirements": {
+    "minTravelersPerBooking": 1,
+    "maxTravelersPerBooking": 15,
+    "requiresAdultForBooking": true
+  },
+  "languageGuides": [
+    {
+      "type": "GUIDE",
+      "language": "en",
+      "legacyGuide": "en/SERVICE_GUIDE"
+    }
+  ],
+  "bookingQuestions": [
+    "AGEBAND",
+    "FULL_NAMES_FIRST",
+    "FULL_NAMES_LAST",
+    "SPECIAL_REQUIREMENTS"
+  ],
+  "tags": [
+    367652,
+    20255,
+    11929,
+    367653,
+    11938,
+    367661,
+    11888,
+    22046,
+    367654,
+    367659
+  ],
+  "destinations": [
+    {
+      "ref": "28",
+      "primary": true
+    }
+  ],
+  "itinerary": {
+    "itineraryType": "STANDARD",
+    "skipTheLine": false,
+    "privateTour": false,
+    "maxTravelersInSharedTour": 62,
+    "duration": {
+      "fixedDurationInMinutes": 180
+    },
+    "itineraryItems": [
+      {
+        "pointOfInterestLocation": {
+          "location": {
+            "ref": "LOC-o0AXGEKPN4wJ9sIG0RAn5Ap6gmhk2v3J8LT9mJwh/m3Pag/Eh+ZlJLT33sJm+/ok"
+          }
+        },
+        "duration": {
+          "fixedDurationInMinutes": 30
+        },
+        "passByWithoutStopping": false,
+        "admissionIncluded": "NOT_APPLICABLE",
+        "description": "Swim, Snorkel and Rope Swing at this picturesque Bay"
+      }
+    ]
+  },
+  "productOptions": [
+    {
+      "productOptionCode": "DEFAULT",
+      "description": "",
+      "title": "Aruba Jolly Pirate Afternoon Sail with Snorkeling",
+      "languageGuides": [
+        {
+          "type": "GUIDE",
+          "language": "en",
+          "legacyGuide": "en/SERVICE_GUIDE"
+        }
+      ]
+    }
+  ],
+  "translationInfo": {
+    "containsMachineTranslatedText": false,
+    "translationSource": "ORIGINAL"
+  },
+  "supplier": {
+    "name": "Jolly Pirates Sailing Cruises & Snorkeling",
+    "reference": "SUPPLIER-xVMwhvbvo/GiJgYLuqqioA=="
+  },
+  "productUrl": "https://shop.live.rc.viator.com/tours/Aruba/Afternoon-Pirate-Sail-and-Snorkel-Cruise-in-Aruba/d28-37387P3?mcid=42383&pid=P00276441&medium=api&api_version=2.0",
+  "reviews": {
+    "sources": [
+      {
+        "provider": "VIATOR",
+        "reviewCounts": [
+          {
+            "rating": 1,
+            "count": 0
+          },
+          {
+            "rating": 2,
+            "count": 5
+          },
+          {
+            "rating": 3,
+            "count": 3
+          },
+          {
+            "rating": 4,
+            "count": 7
+          },
+          {
+            "rating": 5,
+            "count": 103
+          }
+        ],
+        "totalCount": 118,
+        "averageRating": 4.8
+      },
+      {
+        "provider": "TRIPADVISOR",
+        "reviewCounts": [
+          {
+            "rating": 1,
+            "count": 15
+          },
+          {
+            "rating": 2,
+            "count": 9
+          },
+          {
+            "rating": 3,
+            "count": 15
+          },
+          {
+            "rating": 4,
+            "count": 38
+          },
+          {
+            "rating": 5,
+            "count": 293
+          }
+        ],
+        "totalCount": 370,
+        "averageRating": 4.6
+      }
+    ],
+    "reviewCountTotals": [
+      {
+        "rating": 1,
+        "count": 15
+      },
+      {
+        "rating": 2,
+        "count": 14
+      },
+      {
+        "rating": 3,
+        "count": 18
+      },
+      {
+        "rating": 4,
+        "count": 45
+      },
+      {
+        "rating": 5,
+        "count": 396
+      }
+    ],
+    "totalReviews": 488,
+    "combinedAverageRating": 4.625
+  }
+}

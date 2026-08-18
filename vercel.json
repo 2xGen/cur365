@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://cur365.com/:path*",
+      "permanent": true,
+      "has": [
+        { "type": "host", "value": "www.cur365.com" }
+      ]
+    }
+  ]
+}

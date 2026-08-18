@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cur-coral: #E85D04;
+  --cur-blue: #0077BE;
+  --cur-coral-dark: #C94D00;
+  --cur-blue-dark: #00619E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased text-slate-800 bg-white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Dot pattern – no gradient */
+.bg-dots {
+  background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.bg-dots-subtle {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Button hover lift */
+.btn-lift {
+  @apply transition-all duration-200 ease-out;
+}
+.btn-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input focus ring with brand color */
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--cur-blue);
+}
