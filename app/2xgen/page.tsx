@@ -1,17 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
-
-export const metadata: Metadata = {
-  title: "2xGen LLC – Next-gen digital platforms",
+export const metadata: Metadata = pageMetadata({
+  title: "2xGen LLC – Next-gen digital platforms | Cur365",
   description:
     "2xGen builds and operates digital platforms: Tyo365, Prg365, Aru365, Lon365, Cur365, TopTours.ai, ArubaBuddies, FactuurBaas, OneHappyFinance, AruList, and more.",
-  openGraph: {
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Cur365 – Tours and excursions in Curaçao" }],
-  },
-};
+  path: "/2xgen",
+});
 
 const platforms = [
   {

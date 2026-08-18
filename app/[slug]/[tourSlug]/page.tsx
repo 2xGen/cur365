@@ -13,10 +13,7 @@ import { TourListingTemplate } from "@/components/TourListingTemplate";
 import { GuideTemplate } from "@/components/GuideTemplate";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
-
-const SITE_URL = "https://cur365.com";
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string; tourSlug: string }>;
@@ -26,30 +23,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug: categorySlug, tourSlug } = await params;
   const pillar = getPillarBySlug(categorySlug);
   const categoryTitle = pillar?.title ?? categorySlug;
-  const pageUrl = `${SITE_URL}/${categorySlug}/${tourSlug}`;
-  const ogImages = [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Cur365 – Klein Curaçao tours from Curaçao" }];
+  const path = `/${categorySlug}/${tourSlug}`;
 
   const guide = getGuide(categorySlug, tourSlug);
   if (guide) {
-    const title = `${guide.title} | ${categoryTitle} | Cur365`;
-    return {
-      title,
+    return pageMetadata({
+      title: `${guide.title} | ${categoryTitle} | Cur365`,
       description: guide.description,
-      openGraph: { title, description: guide.description, url: pageUrl, images: ogImages },
-      alternates: { canonical: pageUrl },
-    };
+      path,
+    });
   }
 
   const listing = getTourListing(categorySlug, tourSlug);
   if (!listing) return {};
   const displayTitle = listing.seoTitle ?? `${listing.operator} — ${listing.angle}`;
-  const title = `${displayTitle} | ${categoryTitle} | Cur365`;
-  return {
-    title,
+  return pageMetadata({
+    title: `${displayTitle} | ${categoryTitle} | Cur365`,
     description: listing.metaDescription,
-    openGraph: { title, description: listing.metaDescription, url: pageUrl, images: ogImages },
-    alternates: { canonical: pageUrl },
-  };
+    path,
+  });
 }
 
 export async function generateStaticParams() {

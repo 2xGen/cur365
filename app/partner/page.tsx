@@ -1,21 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
+import { pageMetadata } from "@/lib/seo";
 
-const SITE_URL = "https://cur365.com";
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
-
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Partner with us | Feature your Klein Curaçao tours on Cur365",
   description:
     "Get your Klein Curaçao boat trip, yacht, powerboat or private charter featured on Cur365. Contact us by email or WhatsApp to partner with us.",
-  openGraph: {
-    url: `${SITE_URL}/partner`,
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Cur365 – Klein Curaçao tours from Curaçao" }],
-  },
-  alternates: { canonical: `${SITE_URL}/partner` },
-};
+  path: "/partner",
+});
 
 export default function PartnerPage() {
   return (

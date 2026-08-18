@@ -9,21 +9,14 @@ import { getPillarBySlug } from "@/data/pillars";
 import { featuredTours } from "@/data/featuredTours";
 import { getStaticProductSummaries } from "@/data/staticProductSummaries";
 import { fetchProductsBulk } from "@/lib/viator-api";
+import { pageMetadata, SITE_URL } from "@/lib/seo";
 
-const SITE_URL = "https://cur365.com";
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
-
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Cur365 – Klein Curaçao Tours | Book Day Trips, Yachts & Private Boats",
   description:
     "Book Klein Curaçao tours from Curaçao. Compare catamaran day trips, yachts, powerboats and private charters that land on the uninhabited island.",
-  openGraph: {
-    url: SITE_URL,
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Cur365 – Klein Curaçao tours from Curaçao" }],
-  },
-  alternates: { canonical: SITE_URL },
-};
+  path: "/",
+});
 
 /** Six unique Klein Curaçao landings — not one-per-category (that left a lopsided fifth card). */
 const HOMEPAGE_PICKS: { categorySlug: string; productCode: string }[] = [

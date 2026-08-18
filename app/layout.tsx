@@ -3,6 +3,7 @@ import { Outfit, DM_Sans, Playfair_Display } from "next/font/google";
 import { Header } from "@/components/Header";
 import { CookieConsentProvider } from "@/components/CookieConsentContext";
 import { ConsentAnalytics } from "@/components/ConsentAnalytics";
+import { OG_IMAGE, SITE_URL, ogImages } from "@/lib/seo";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -23,9 +24,6 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const SITE_URL = "https://cur365.com";
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
 const defaultTitle = "Cur365 – Klein Curaçao Tours from Curaçao | Day Trips, Yachts, Powerboats";
 const defaultDescription =
   "The Klein Curaçao experts. Compare and book day trips, yachts, powerboats and private charters that land on the uninhabited island — with free cancellation on most tours.";
@@ -35,7 +33,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Cur365",
   url: SITE_URL,
-  logo: DEFAULT_OG_IMAGE,
+  logo: OG_IMAGE,
   description: defaultDescription,
 };
 
@@ -70,20 +68,13 @@ export const metadata: Metadata = {
     siteName: "Cur365",
     title: defaultTitle,
     description: defaultDescription,
-    images: [
-      {
-        url: DEFAULT_OG_IMAGE,
-        width: 1200,
-        height: 630,
-        alt: "Cur365 – Klein Curaçao tours from Curaçao",
-      },
-    ],
+    images: ogImages(),
   },
   twitter: {
     card: "summary_large_image",
     title: defaultTitle,
     description: defaultDescription,
-    images: [DEFAULT_OG_IMAGE],
+    images: [OG_IMAGE],
   },
 };
 

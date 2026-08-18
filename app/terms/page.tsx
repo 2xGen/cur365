@@ -1,21 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
+import { pageMetadata } from "@/lib/seo";
 
-const SITE_URL = "https://cur365.com";
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
-
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Terms and Conditions | Cur365",
   description:
     "Terms and conditions for using Cur365. We are an affiliate platform; we do not process bookings or personal data. Bookings are made with Viator.",
-  openGraph: {
-    url: `${SITE_URL}/terms`,
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Cur365 – Klein Curaçao tours from Curaçao" }],
-  },
-  alternates: { canonical: `${SITE_URL}/terms` },
-};
+  path: "/terms",
+});
 
 export default function TermsPage() {
   return (

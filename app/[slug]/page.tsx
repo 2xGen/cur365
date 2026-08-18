@@ -6,10 +6,7 @@ import { fetchProductsBulk } from "@/lib/viator-api";
 import { PillarTemplate } from "@/components/PillarTemplate";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
-
-const SITE_URL = "https://cur365.com";
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -22,19 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!pillar) return {};
   const title = `Book ${pillar.title} | Cur365`;
   const description = `${pillar.description} Compare options and book with free cancellation.`;
-  return {
-    title,
-    description,
-    openGraph: {
-      title,
-      description,
-      url: `${SITE_URL}/${slug}`,
-      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Cur365 – Klein Curaçao tours from Curaçao" }],
-    },
-    alternates: {
-      canonical: `${SITE_URL}/${slug}`,
-    },
-  };
+  return pageMetadata({ title, description, path: `/${slug}` });
 }
 
 export async function generateStaticParams() {

@@ -13,21 +13,14 @@ import { fetchProductsBulk } from "@/lib/viator-api";
 import type { ViatorProductSummary } from "@/lib/viator-api";
 import { getCategoryBookUrl } from "@/lib/booking";
 import type { Metadata } from "next";
+import { pageMetadata, SITE_URL } from "@/lib/seo";
 
-const SITE_URL = "https://cur365.com";
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
-
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Best Klein Curaçao Tours | Compare Day Trips, Yachts & Private Boats | Cur365",
   description:
     "Compare the best Klein Curaçao tours from Curaçao. Day trips, yachts, powerboats and private charters. Book with free cancellation.",
-  openGraph: {
-    url: `${SITE_URL}/best-tours-in-curacao`,
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Cur365 – Klein Curaçao tours from Curaçao" }],
-  },
-  alternates: { canonical: `${SITE_URL}/best-tours-in-curacao` },
-};
+  path: "/best-tours-in-curacao",
+});
 
 const bestToursSchema = {
   "@context": "https://schema.org",

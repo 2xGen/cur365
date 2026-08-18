@@ -11,10 +11,7 @@ import { kleinCuracaoHubSlug } from "@/data/kleinListingsCuracao";
 import { getPillarBySlug } from "@/data/pillars";
 import { getStaticProductSummaries } from "@/data/staticProductSummaries";
 import type { Metadata } from "next";
-
-const SITE_URL = "https://cur365.com";
-const DEFAULT_OG_IMAGE =
-  "https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/cur365/cur365%20tours%20and%20excursions%20in%20curacao.png";
+import { pageMetadata, SITE_URL } from "@/lib/seo";
 
 const PAGE_TITLE = "Klein Curaçao Tours & Excursions";
 const PAGE_DESCRIPTION =
@@ -33,31 +30,18 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
       pillar.description.length > 160
         ? pillar.description.slice(0, 157).trim() + "..."
         : pillar.description;
-    const url = `${SITE_URL}/tours-excursions?category=${encodeURIComponent(validCategory!)}`;
-    return {
+    return pageMetadata({
       title,
       description,
-      openGraph: {
-        url,
-        title,
-        description,
-        images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: `Cur365 – ${pillar.title}` }],
-      },
-      alternates: { canonical: url },
-    };
+      path: `/tours-excursions?category=${encodeURIComponent(validCategory!)}`,
+    });
   }
 
-  return {
+  return pageMetadata({
     title: META_TITLE,
     description: PAGE_DESCRIPTION,
-    openGraph: {
-      url: `${SITE_URL}/tours-excursions`,
-      title: META_TITLE,
-      description: PAGE_DESCRIPTION,
-      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "Cur365 – Tours and excursions in Curaçao" }],
-    },
-    alternates: { canonical: `${SITE_URL}/tours-excursions` },
-  };
+    path: "/tours-excursions",
+  });
 }
 
 /** Hub lists every boat again; style categories are the useful filters. */
