@@ -84,7 +84,18 @@ export default function TermsPage() {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">6. Contact</h2>
+                <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">6. Cookies and analytics</h2>
+                <p className="text-slate-600 leading-relaxed">
+                  Cur365 uses essential cookies so the site can function (for example remembering your cookie choice).
+                  If you click Accept all, we also load Vercel Analytics to count page views. That script is not loaded
+                  until you consent. Analytics is used to understand which pages are visited; it is not used for
+                  advertising. You can switch to essential-only cookies at any time via Cookie preference in the footer.
+                  Bookings are handled by Viator; their cookies and privacy policy apply once you leave Cur365.
+                </p>
+              </section>
+
+              <section className="mb-8">
+                <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-3">7. Contact</h2>
                 <p className="text-slate-600 leading-relaxed">
                   For questions about these terms or about Cur365, you can contact us at{" "}
                   <a href="mailto:matthijs@2xgen.com" className="text-cur-blue hover:underline">

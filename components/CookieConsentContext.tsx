@@ -1,7 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { createContext, useCallback, useContext, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+  type ReactNode,
+} from "react";
+
+const STORAGE_KEY = "cur365-cookie-consent";
 
 export type CookieConsent = {
   essential: true;
@@ -14,26 +23,51 @@ type ContextValue = {
   openCookiePreferences: () => void;
 };
 
-// Provide a non-null default and keep behavior simple to avoid runtime issues
 const CookieConsentContext = createContext<ContextValue>({
-  consent: { essential: true, analytics: false },
+  consent: null,
   setConsent: () => {},
   openCookiePreferences: () => {},
 });
 
+function readStoredConsent(): CookieConsent | null {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as { analytics?: unknown };
+    if (typeof parsed.analytics === "boolean") {
+      return { essential: true, analytics: parsed.analytics };
+    }
+  } catch {
+    /* ignore */
+  }
+  return null;
+}
+
 export function CookieConsentProvider({ children }: { children: ReactNode }) {
-  const [consent, setConsentState] = useState<CookieConsent | null>({
-    essential: true,
-    analytics: false,
-  });
+  const [consent, setConsentState] = useState<CookieConsent | null>(null);
+  const [ready, setReady] = useState(false);
+  const [preferencesOpen, setPreferencesOpen] = useState(false);
+
+  useEffect(() => {
+    setConsentState(readStoredConsent());
+    setReady(true);
+  }, []);
 
   const setConsent = useCallback((value: CookieConsent) => {
     setConsentState(value);
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
+    } catch {
+      /* ignore */
+    }
+    setPreferencesOpen(false);
   }, []);
 
   const openCookiePreferences = useCallback(() => {
-    // No-op in this simplified implementation
+    setPreferencesOpen(true);
   }, []);
+
+  const showBanner = ready && (consent === null || preferencesOpen);
 
   return (
     <CookieConsentContext.Provider
@@ -44,7 +78,13 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
       }}
     >
       {children}
-      {/* Cookie banner temporarily disabled to avoid dev runtime issues */}
+      {showBanner && (
+        <CookieBanner
+          onAcceptAll={() => setConsent({ essential: true, analytics: true })}
+          onEssentialOnly={() => setConsent({ essential: true, analytics: false })}
+          onClose={consent !== null ? () => setPreferencesOpen(false) : undefined}
+        />
+      )}
     </CookieConsentContext.Provider>
   );
 }
@@ -65,15 +105,21 @@ function CookieBanner({
   return (
     <div
       role="dialog"
-      aria-label="Cookie consent"
+      aria-modal="true"
+      aria-labelledby="cookie-consent-title"
+      aria-describedby="cookie-consent-desc"
       className="fixed bottom-0 left-0 right-0 z-[100] p-4 sm:p-6 bg-white border-t border-slate-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]"
     >
       <div className="container mx-auto max-w-3xl">
-        <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-start gap-4">
           <div className="flex-1 min-w-0">
-            <p className="text-sm text-slate-700 leading-relaxed">
-              We use essential cookies to make the site work. We may use analytics (e.g. Google Search Console and
-              similar tools) to understand how the site is used. You can accept all cookies or only essential ones.{" "}
+            <p id="cookie-consent-title" className="text-sm font-semibold text-slate-900">
+              Cookies
+            </p>
+            <p id="cookie-consent-desc" className="mt-1 text-sm text-slate-700 leading-relaxed">
+              Essential cookies make the site work. If you accept all, we also use{" "}
+              <strong className="font-medium">Vercel Analytics</strong> to count page views (anonymous, no ads).
+              You can change this anytime via Cookie preference in the footer.{" "}
               <Link href="/terms" className="text-cur-blue hover:underline font-medium">
                 Terms &amp; Conditions
               </Link>
